@@ -1,0 +1,909 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    height: 500vh;
+}
+
+.blockhead {
+    display: block;
+    height: 40vh;
+    width: 50vw;
+}
+
+.blockhead2 {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.nav-row {
+    z-index: 9;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+.nav-row a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+.nav-row a:hover {
+    background: #ddd;
+    color: black;
+    }
+
+
+#curtain {
+    z-index: 11;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./Images/starcircle.jpg');
+    background-size: 100% 100%;
+    }
+
+.bg-row {
+    position: fixed;
+    margin-top: 30px;
+    width: 100vw;
+    height: 200vh;
+}
+
+.omari {
+    margin-left: 20vw;
+}
+
+
+.about {
+    height: 100vh;
+}
+
+.sample {
+    background: url('./Images/starcircle.jpg');
+    height: 300vh;
+}
+
+.sample1, .sample2 {
+    /* border: 2px solid red; */
+    height: 150vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+.sample1 {
+    border-top: 2px solid navy;
+}
+
+.icon {
+    /* border: 2px solid orangered; */
+    margin-top: 8vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    height: 40vh;
+    width: 50vw;
+}
+
+h1 {
+    padding-left: 5vw;
+}
+
+p {
+    font-size: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.bg-frozen {
+    position: fixed;
+    top: 58px!important;
+}
+  
+.bg-active {
+    position: absolute!important;
+}
+
+.photo {
+    transform: rotate(270deg);
+    margin-left: 5vw;
+    height: 30vh;
+    width: 30vw;
+}
+
+#icon1 {
+    background: url('./Click\ Me/The\ Dusk\ and\ Dawn.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent:-9999px;
+}
+
+#icon2 {
+    background: url('./Click\ Me/Star\ Wars.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent:-9999px;
+}
+
+#icon3 {
+    background: url('./Click\ Me/Mass\ Effect\ Andromeda.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent:-9999px;
+}
+
+#icon4 {
+    background: url('./Click\ Me/Holy\ Hearts.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent:-9999px;
+}
+
+#icon5 {
+    background: url('./Click\ Me/Fate\ of\ Nephilim.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent:-9999px;
+}
+
+#icon6 {
+    background: url('./Click\ Me/Code\ Geass\ Nepoleonic\ Wars.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent:-9999px;
+}
+
+#resume {
+
+}
+
+#box-res {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid pink; */
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.res {
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid pink; */
+}
+
+#res1 {
+    background: url('./Click\ Me/resume\ 1.png');
+    background-size: cover;
+    text-indent:-9999px;
+}
+
+
+.footer {
+    background: url('./Images/starcircle.jpg');
+    height: 100vh;
+    width: 100vw;
+}
+
+#fin {
+    padding-top: 15vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.social {
+    margin-left: 5vw;
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+                    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 1px 0 black)
+            drop-shadow(-1px -1px 0 black);
+}
+
+#social1 {
+    height: 25vh; 
+    width: 20vw;
+}
+
+#social2 {
+    margin-left: 25vw;
+    margin-right: 10vw;
+    height: 25vh; 
+    width: 25vw;
+}
+
+#social3 {
+    height: 25vh; 
+    width: 25vw;
+}
+
+#social4 {
+    height: 25vh; 
+    width: 25vw; 
+}
+
+#social5 {
+    height: 25vh; 
+    width: 25vh; 
+}
+
+#modal {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+#modal-textbox {
+	font-family: arial;
+	background-color: white;
+	height: 150vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+#modal-bottom {
+    text-align: right;
+}
+
+.modal-buttons {
+	padding: 14px 18px;
+	background-color: navy;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
+}
+
+#modal2 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+#modal-textbox2 {
+	font-family: arial;
+	background-color: white;
+	height: 550vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+#modal3 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+#modal-textbox3 {
+	font-family: arial;
+	background-color: white;
+	height: 170vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+#modal4 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+#modal-textbox4 {
+	font-family: arial;
+	background-color: white;
+	height: 650vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+#modal5 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+#modal-textbox5 {
+	font-family: arial;
+	background-color: white;
+	height: 2170vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+#modal6 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+#modal-textbox6 {
+	font-family: arial;
+	background-color: white;
+	height: 340vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+#modal7 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+#modal-textbox7 {
+	font-family: arial;
+	background-color: white;
+	height: 280vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+#modal8 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+#modal-textbox8 {
+	font-family: arial;
+	background-color: white;
+	height: 50vh;
+	width: 50vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+@media (min-width: 720px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0 auto;
+        height: 420vh;
+    }
+    
+    
+    .blockhead {
+        display: block;
+        height: 40vh;
+        width: 24vw;
+    }
+    
+    .blockhead2 {
+        display: block;
+        height: 100vh;
+        width: 45vw;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+      }
+    
+    .nav-row {
+        z-index: 9;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }
+    
+    .nav-row a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+    
+    .nav-row a:hover {
+        background: #ddd;
+        color: black;
+        }
+    
+    .omari {
+        margin-right: 35vw;
+        margin-left: 0vw;
+    }
+    
+    #curtain {
+        z-index: 11;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./Images/starcircle.jpg');
+        background-size: 100% 100%;
+        }
+    
+    .bg-row {
+        position: fixed;
+        margin-top: 30px;
+        width: 100vw;
+        height: 200vh;
+    }
+    
+    .about {
+        height: 100vh;
+    }
+    
+    .sample {
+        background: url('./Images/starcircle.jpg');
+        height: 100vh;
+    }
+    
+    .sample1, .sample2 {
+        /* border: 2px solid red; */
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .sample1 {
+        border-top: 2px solid navy;
+    }
+    
+    .icon {
+        /* border: 2px solid orangered; */
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-top: 5vh;
+        height: 40vh;
+        width: 24vw;
+    }
+
+    ul {
+        margin-left: 4vw;
+    }
+    
+    .bg-frozen {
+        position: fixed;
+        top: 58px!important;
+    }
+      
+    .bg-active {
+        position: absolute!important;
+    }
+    
+    .photo {
+        margin-left: 5vw;
+        height: 30vh;
+        width: 15vw;
+    }
+    
+    #icon1 {
+        background: url('./Click\ Me/The\ Dusk\ and\ Dawn.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent:-9999px;
+    }
+    
+    #icon2 {
+        background: url('./Click\ Me/Star\ Wars.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent:-9999px;
+    }
+    
+    #icon3 {
+        background: url('./Click\ Me/Mass\ Effect\ Andromeda.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent:-9999px;
+    }
+    
+    #icon4 {
+        background: url('./Click\ Me/Holy\ Hearts.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent:-9999px;
+    }
+    
+    #icon5 {
+        background: url('./Click\ Me/Fate\ of\ Nephilim.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent:-9999px;
+    }
+    
+    #icon6 {
+        background: url('./Click\ Me/Code\ Geass\ Nepoleonic\ Wars.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent:-9999px;
+    }
+    
+    
+    #box-res {
+        display: flex;
+        flex-direction: row;
+        /* border: 2px solid pink; */
+        margin-left: 30vw;
+        margin-right: 30vw;
+    }
+    
+    .res {
+        height: 100vh;
+        width: 45vw;
+        /* border: 2px solid pink; */
+    }
+    
+    #res1 {
+        background: url('./Click\ Me/resume\ 1.png');
+        background-size: cover;
+        text-indent:-9999px;
+    }
+    
+    
+    .footer {
+        background: url('./Images/starcircle.jpg');
+        height: 20vh;
+        width: 100vw;
+    }
+    
+    #fin {
+        margin-right: 0vw;
+        padding-top: 5vh;
+        margin-left: 27vw;
+    }
+    
+    .social {
+        margin-left: 5vw;
+        -webkit-filter: drop-shadow(1px 1px 0 black)
+                        drop-shadow(-1px -1px 0 black);
+        filter: drop-shadow(1px 1px 0 black)
+                drop-shadow(-1px -1px 0 black);
+    }
+    
+    #social1 {
+        height: 25%; 
+        width: 5%;
+    }
+
+    #social2 {
+        margin-left: 5vw;
+        margin-right: 4vw;
+        height: 25%; 
+        width: 8%;
+    }
+
+    #social3 {
+        height: 25%; 
+        width: 6%;
+    }
+
+    #social4 {
+        height: 25%; 
+        width: 5%; 
+    }
+
+    #social5 {
+        margin-left: 0vw;
+        margin-right: 0vw;
+        height: 25%; 
+        width: 6%; 
+    }
+
+    #modal {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+    #modal-textbox {
+	font-family: arial;
+	background-color: white;
+	height: 100vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+    .modal-buttons {
+	padding: 14px 18px;
+	background-color: navy;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
+}
+
+    #modal2 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+    #modal-textbox2 {
+	font-family: arial;
+	background-color: white;
+	height: 325vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+    #modal3 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+    #modal-textbox3 {
+	font-family: arial;
+	background-color: white;
+	height: 110vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+    #modal4 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+    #modal-textbox4 {
+	font-family: arial;
+	background-color: white;
+	height: 370vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+    #modal5 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+    #modal-textbox5 {
+	font-family: arial;
+	background-color: white;
+	height: 1250vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+    #modal6 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+    #modal-textbox6 {
+	font-family: arial;
+	background-color: white;
+	height: 210vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+#modal7 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+    #modal-textbox7 {
+	font-family: arial;
+	background-color: white;
+	height: 260vh;
+	width: 90vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+#modal8 {
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
+#modal-textbox8 {
+	font-family: arial;
+	background-color: white;
+	height: 50vh;
+	width: 50vw;
+	border-radius: 2px;
+	margin: 10vh auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+}
