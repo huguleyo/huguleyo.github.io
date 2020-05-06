@@ -174,26 +174,26 @@ close7.addEventListener('click', closeModal7)
 bclose7.addEventListener('click', closeModal7)
 
 // 8th Textbox
-const openBtn8 = document.getElementById('openModal8');
-const modal8 = document.getElementById('modal8')
-const bclose8 = document.getElementById('bclose8')
-const form = document.querySelector('form')
+// const openBtn8 = document.getElementById('openModal8');
+// const modal8 = document.getElementById('modal8')
+// const bclose8 = document.getElementById('bclose8')
+// const form = document.querySelector('form')
 
-const openModal8 = () => {
-  modal8.style.display = 'block';
-}
+// const openModal8 = () => {
+//   modal8.style.display = 'block';
+// }
 
 
 
-const closeModal8 = () => {
-  modal8.style.display = 'none'
-}
+// const closeModal8 = () => {
+//   modal8.style.display = 'none'
+// }
 
-form.addEventListener('submit', (event) => {
-event.preventDefault()
-})
+// form.addEventListener('submit', (event) => {
+// event.preventDefault()
+// })
 
-openBtn8.addEventListener('click', openModal8)
+// openBtn8.addEventListener('click', openModal8)
 
-bclose8.addEventListener('click', closeModal8)
+// bclose8.addEventListener('click', closeModal8)
 
