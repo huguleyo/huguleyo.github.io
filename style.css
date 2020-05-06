@@ -251,7 +251,7 @@ p {
 #modal-textbox {
 	font-family: arial;
 	background-color: white;
-	height: 150vh;
+	/* height: 150vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 150px auto;
@@ -292,7 +292,7 @@ p {
 #modal-textbox2 {
 	font-family: arial;
 	background-color: white;
-	height: 550vh;
+	/* height: 550vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -318,7 +318,7 @@ p {
 #modal-textbox3 {
 	font-family: arial;
 	background-color: white;
-	height: 170vh;
+	/* height: 170vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -344,7 +344,7 @@ p {
 #modal-textbox4 {
 	font-family: arial;
 	background-color: white;
-	height: 650vh;
+	/* height: 650vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -370,7 +370,7 @@ p {
 #modal-textbox5 {
 	font-family: arial;
 	background-color: white;
-	height: 2170vh;
+	/* height: 2170vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -396,7 +396,7 @@ p {
 #modal-textbox6 {
 	font-family: arial;
 	background-color: white;
-	height: 340vh;
+	/* height: 340vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -422,7 +422,7 @@ p {
 #modal-textbox7 {
 	font-family: arial;
 	background-color: white;
-	height: 280vh;
+	/* height: 280vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -448,7 +448,7 @@ p {
 #modal-textbox8 {
 	font-family: arial;
 	background-color: white;
-	height: 50vh;
+	/* height: 50vh; */
 	width: 50vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -704,7 +704,7 @@ p {
     #modal-textbox {
 	font-family: arial;
 	background-color: white;
-	height: 100vh;
+	/* height: 100vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -741,7 +741,7 @@ p {
     #modal-textbox2 {
 	font-family: arial;
 	background-color: white;
-	height: 325vh;
+	/* height: 325vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -767,7 +767,7 @@ p {
     #modal-textbox3 {
 	font-family: arial;
 	background-color: white;
-	height: 110vh;
+	/* height: 110vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -793,7 +793,7 @@ p {
     #modal-textbox4 {
 	font-family: arial;
 	background-color: white;
-	height: 370vh;
+	/* height: 370vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -819,7 +819,7 @@ p {
     #modal-textbox5 {
 	font-family: arial;
 	background-color: white;
-	height: 1250vh;
+	/* height: 1250vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -845,7 +845,7 @@ p {
     #modal-textbox6 {
 	font-family: arial;
 	background-color: white;
-	height: 210vh;
+	/* height: 210vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -871,7 +871,7 @@ p {
     #modal-textbox7 {
 	font-family: arial;
 	background-color: white;
-	height: 260vh;
+	/* height: 260vh; */
 	width: 90vw;
 	border-radius: 2px;
 	margin: 10vh auto;
@@ -897,7 +897,7 @@ p {
 #modal-textbox8 {
 	font-family: arial;
 	background-color: white;
-	height: 50vh;
+	/* height: 50vh; */
 	width: 50vw;
 	border-radius: 2px;
 	margin: 10vh auto;

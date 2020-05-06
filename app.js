@@ -189,6 +189,10 @@ const closeModal8 = () => {
   modal8.style.display = 'none'
 }
 
+form.addEventListener('submit', (event) => {
+event.preventDefault()
+})
+
 openBtn8.addEventListener('click', openModal8)
 
 bclose8.addEventListener('click', closeModal8)
