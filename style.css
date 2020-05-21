@@ -71,7 +71,7 @@ html {
 
 .sample {
     background: url('./Images/starcircle.jpg');
-    height: 300vh;
+    height: 120vh;
 }
 
 .sample1, .sample2 {
@@ -160,10 +160,6 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     text-indent:-9999px;
-}
-
-#resume {
-
 }
 
 #box-res {
@@ -436,6 +432,11 @@ p {
 	text-shadow: 2px 2px white;
 }
 
+#header2 {
+    color: white;
+	text-shadow: 2px 2px black; 
+}
+
 @media (min-width: 720px) {
     body {
         font-family: 'Roboto', sans-serif;
@@ -510,7 +511,7 @@ p {
     
     .sample {
         background: url('./Images/starcircle.jpg');
-        height: 100vh;
+        height: 120vh;
     }
     
     .sample1, .sample2 {
@@ -860,8 +861,14 @@ p {
 }
 
 #email {
-	text-shadow: 2px 2px white;
+    color: white;
+	text-shadow: 2px 2px black;
 	padding-left: 5vw;
+}
+
+#header2 {
+    color: white;
+	text-shadow: 2px 2px black; 
 }
 
 }
